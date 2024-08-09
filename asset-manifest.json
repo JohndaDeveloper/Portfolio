@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.cfc63a06.css",
-    "main.js": "/static/js/main.099b0972.js",
+    "main.css": "/static/css/main.f5734cc5.css",
+    "main.js": "/static/js/main.6e56e6dd.js",
+    "static/media/Project1.png": "/static/media/Project1.b98fc174b334c7f2ebf2.png",
     "static/media/JohnPic.JPG": "/static/media/JohnPic.9390c8fb99efd4ac8de5.JPG",
     "static/media/John-Nelson-2024.pdf": "/static/media/John-Nelson-2024.f2c08250be6e56ca9a89.pdf",
+    "static/media/Project2.png": "/static/media/Project2.5215ceb7c3733765dd4e.png",
     "static/media/JN-logo-resized.png": "/static/media/JN-logo-resized.3274e6cdcb1a0afc7ca6.png",
     "static/media/email-icon.png": "/static/media/email-icon.c7925c9b8fd2b3c6fccc.png",
     "index.html": "/index.html",
-    "main.cfc63a06.css.map": "/static/css/main.cfc63a06.css.map",
-    "main.099b0972.js.map": "/static/js/main.099b0972.js.map"
+    "main.f5734cc5.css.map": "/static/css/main.f5734cc5.css.map",
+    "main.6e56e6dd.js.map": "/static/js/main.6e56e6dd.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfc63a06.css",
-    "static/js/main.099b0972.js"
+    "static/css/main.f5734cc5.css",
+    "static/js/main.6e56e6dd.js"
   ]
 }
