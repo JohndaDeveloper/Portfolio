@@ -9,6 +9,7 @@ body {
 header {
   background-color: white;
   color: black;
+  padding: 1em;
 }
 
 footer {
@@ -92,7 +93,7 @@ nav a:hover {
 
 .about-me-content {
   display: flex;
-  flex-direction: row; /* Change to row for full view */
+  flex-direction: row; /* Row layout for larger screens */
   align-items: center;
   justify-content: center;
   max-width: 1200px;
@@ -153,6 +154,15 @@ nav a:hover {
 
 /* Mobile styles */
 @media (max-width: 600px) {
+  header,
+  footer {
+    padding: 1em;
+  }
+
+  main {
+    padding: 1.5em;
+  }
+
   .about-container {
     flex-direction: column;
     align-items: center;
@@ -160,7 +170,8 @@ nav a:hover {
 
   .social-icons {
     position: absolute;
-    left: 85%;
+    left: auto;
+    right: 10px;
     top: 12%;
     transform: translateX(-50%);
     flex-direction: row;
@@ -174,19 +185,13 @@ nav a:hover {
   }
 
   .about-me-content {
-    flex-direction: column; /* Change to column for mobile view */
+    flex-direction: column; /* Column layout for mobile */
     align-items: center;
     width: 100%;
   }
 
   .about-me-text {
     padding-right: 0;
-    text-align: center;
-  }
-
-  .about-me-text p,
-  .about-me-text h2,
-  .about-me-text h3 {
     text-align: center;
   }
 
@@ -208,5 +213,11 @@ nav a:hover {
 
   .about-me-image img {
     max-width: 150px;
+  }
+
+  .close-button {
+    width: 100%; /* Full-width buttons for easier tapping */
+    padding: 1em;
+    font-size: 1.2em;
   }
 }

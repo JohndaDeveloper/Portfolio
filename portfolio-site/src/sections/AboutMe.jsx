@@ -20,10 +20,12 @@ const AboutMe = () => {
         <div className="about-me-text">
           <h2>John Nelson</h2>
           <p>
-            Software Developer from Brooklyn, NY, creating applications with
-            modern technologies.
+            Hi there! I'm a passionate Full Stack Developer dedicated to
+            crafting digital solutions that empower businesses and enhance user
+            experiences. With a strong foundation in JavaScript, I specialize in
+            developing scalable and efficient applications using Node.js on the
+            backend and React.js on the front end.
           </p>
-          <button className="contact-button">Let's talk</button>
         </div>
         <div className="about-me-image">
           <img src={JohnPic} alt="John Nelson" />

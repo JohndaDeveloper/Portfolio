@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import JNlogo from "../image/JN-logo-resized.png";
 import email from "../image/email-icon.png";
-import resume from "../assets/John-Nelson-2024.pdf";
 import "../styling/Header.css";
 
 const Header = ({ onShowResume }) => {
@@ -15,7 +14,6 @@ const Header = ({ onShowResume }) => {
         </a>
       </div>
       <nav className="header-right">
-        <a href="#about">About Me</a>
         <a href="#projects">Projects</a>
         <a href="#resume" onClick={onShowResume}>
           Resume

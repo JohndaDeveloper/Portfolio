@@ -1,7 +1,22 @@
-.projects-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.project {
+  display: flex; /* Use flexbox to align items side by side */
+  align-items: center; /* Align items vertically centered */
+  padding: 1em; /* Add padding for spacing */
+  background-color: white; /* Card background color */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Add transition for hover effect */
+  margin: 20px 0; /* Adds space between projects */
+}
+
+.project:hover {
+  background-color: #f9f9f9; /* Change background on hover */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+.project-image {
+  width: 35%; /* Adjust as needed */
+  height: auto;
+  margin-right: 20px; /* Space between image and text */
 }
 
 h2 {
@@ -13,23 +28,13 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  width: 100%;
-}
-
-.project-card {
-  padding: 1em;
-  background-color: white;
-  border-radius: 5px;
+  width: 90%;
   margin-left: 30px;
+  justify-content: center; /* Center projects on wider screens */
 }
 
 /* Mobile styles */
 @media (max-width: 600px) {
-  .projects-container {
-    padding: 1em;
-    margin-left: 0;
-  }
-
   h2 {
     font-size: 1.5em;
     margin-left: 0;
@@ -37,12 +42,19 @@ h2 {
   }
 
   .project-list {
-    width: 100%;
+    width: 80%;
     align-items: center;
   }
 
-  .project-card {
-    margin-left: 0;
-    width: 90%;
+  .project {
+    margin-left: 0; /* Remove margin for mobile */
+    flex-direction: column; /* Stack image below text on mobile */
+    align-items: center; /* Center items */
+  }
+
+  .project-image {
+    width: 80%; /* Adjust image width for mobile */
+    margin-right: 0; /* Remove right margin for mobile */
+    margin-top: 10px; /* Add space above the image */
   }
 }
